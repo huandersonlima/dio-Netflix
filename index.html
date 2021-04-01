@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+   
+    <!--responsividade-->
+    <link rel="stylesheet" href="/style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl.theme.default.min.css">
+    <!--fonte bebas-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header>
+        <class class="container">
+            
+            <div class="naves">
+                <h2 class="logo">MARVELFLIX</h2>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">UCM</a>
+                </nav>
+            </div>  
+            <div class="nav-right">
+                <nav>
+                    <div class="Busca">
+                    <input type="text" id="txtBusca" placeholder="Títulos, pessoas e gêneros"/>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <a href="#">INFANTIL</a>
+                    <a href="#"><i class="far fa-bell"></i></a>
+                    <a href="#">PERFIL</a>
+                </nav>
+            </div> 
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <img class="img-titulo" src="/img/wandavision-disney.png" alt="">
+                <p class="descricao">Wanda Maximoff e Visão, um casal de super-heróis com uma vida perfeita, que começa a suspeitar que nem tudo é o que parece.</p>
+            
+                <div class="botoes">
+                    <button role="button" class="botao" id="botao-play" onclick="gettrailer()">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR
+                    </button>
+                    <button role="button" class="botao" id="botao-info">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="carrosel-filmes">
+            <h3 class="genero">Em alta</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="/img/endgame-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/falcaoesoldado-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/jessicajones-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/guerracivil-capa.jpg" alt="Capitão América: Guerra Civil" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/loki-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/demolidor-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+            </div>
+
+        </div>
+        <div class="carrosel-filmes">
+            <h3 class="genero">Séries da Netflix</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="/img/defensores-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/lukecage-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/jessicajones-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/punhodeferro-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/justiceiro-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/demolidor-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="carrosel-filmes">
+            <h3 class="genero">UCM - Fase 1</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="/img/ironman-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/ironman2-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/capitaoamerica-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/thor-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/hulk-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="/img/vingadores-capa.jpg" alt="vingadores-ultimato" srcset="">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/6d4ff1986d.js" crossorigin="anonymous"></script>  
+    <script src="/js/owl/jquery.min.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
+    <script src="/js/owl/setup.js"></script>
+    <script>
+    function gettrailer(){
+    window.open("https://www.youtube.com/watch?v=sj9J2ecsSpo");
+}
+    </script>
+</body>
+</html>
