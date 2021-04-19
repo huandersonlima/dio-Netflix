@@ -109,6 +109,13 @@ header nav a:hover{
 .filme-principal .img-titulo{
     height: 70%;
     width: 50%;
+    transition: .5s ease;
+}
+
+.filme-principal .img-titulo:hover{
+    height: 70%;
+    width: 60%;
+    
 }
 
 .botao{
@@ -166,4 +173,35 @@ header nav a:hover{
 
 .carrosel-filmes .genero{
     margin-bottom: 10px;
+}
+
+
+/*capas*/
+.item{
+    position: relative;
+}
+
+.capa{
+    position: relative;
+    transition: .5s ease;
+   
+}
+
+.capa:hover{
+    opacity: .7;
+}
+.contra-capa:hover{
+    opacity: .9;
+}
+
+.contra-capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    transition: .5s ease;
+    opacity: 0;
+    top: 100%;
+    left: 100%;  
+    transform: translate(-100%, -100%); 
 }
